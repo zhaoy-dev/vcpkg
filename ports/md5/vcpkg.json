@@ -1,6 +1,7 @@
 {
   "name": "md5",
   "version": "1.0.0",
+  "port-version": 1,
   "description": "MD5 C++ class convert from Frank Thilo (thilo@unix-ag.org) for bzflag (http://www.bzflag.org)",
   "homepage": "https://www.bzflag.org/",
   "license": null,

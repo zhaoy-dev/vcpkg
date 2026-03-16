@@ -5698,7 +5698,7 @@
     },
     "md5": {
       "baseline": "1.0.0",
-      "port-version": 0
+      "port-version": 1
     },
     "mdl-sdk": {
       "baseline": "2021.1.2",
