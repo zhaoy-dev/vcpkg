@@ -7,6 +7,7 @@ vcpkg_from_github(
         cmake-config-dir.diff
         spirv-tools-shared.diff
         fix-tool-deps.diff
+        fix-ohos-platform.patch
 )
 
 vcpkg_find_acquire_program(PYTHON3)
