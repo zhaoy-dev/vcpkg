@@ -32,7 +32,8 @@ vcpkg_cmake_configure(
         ${OPTIONS}
         "-DCMAKE_PROJECT_INCLUDE=${CMAKE_CURRENT_LIST_DIR}/cmake-project-include.cmake"
         -DSHADERC_ENABLE_EXAMPLES=OFF
-        -DSHADERC_SKIP_TESTS=true 
+        -DSHADERC_SKIP_TESTS=true
+        -DSHADERC_ENABLE_WERROR_COMPILE=OFF # OHOS toolchain: --gcc-toolchain treated as unused by clang
 )
 
 vcpkg_cmake_install()
