@@ -11,6 +11,7 @@ vcpkg_from_github(
         0004-quirks.patch
         0005-no-vendored-libs.patch
         0006-fix-ios-install.patch
+        0007-fix-ohos-cpu-detection.patch
 )
 file(REMOVE "${SOURCE_PATH}/other_include/zstd_errors.h")
 
