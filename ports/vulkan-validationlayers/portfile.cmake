@@ -12,10 +12,19 @@ vcpkg_find_acquire_program(PYTHON3)
 get_filename_component(PYTHON3_DIR "${PYTHON3}" DIRECTORY)
 vcpkg_add_to_path("${PYTHON3_DIR}")
 
+if(VCPKG_CMAKE_SYSTEM_NAME STREQUAL "OHOS" OR VCPKG_CMAKE_SYSTEM_NAME STREQUAL "Android")
+  set(wsi_options
+    -DBUILD_WSI_XCB_SUPPORT:BOOL=OFF
+    -DBUILD_WSI_XLIB_SUPPORT:BOOL=OFF
+    -DBUILD_WSI_WAYLAND_SUPPORT:BOOL=OFF
+  )
+endif()
+
 vcpkg_cmake_configure(
   SOURCE_PATH "${SOURCE_PATH}"
   OPTIONS
     -DBUILD_TESTS:BOOL=OFF
+    ${wsi_options}
 )
 vcpkg_cmake_install()
 
