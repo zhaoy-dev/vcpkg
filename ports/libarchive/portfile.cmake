@@ -59,6 +59,7 @@ vcpkg_cmake_configure(
         -DENABLE_TAR=OFF
         -DENABLE_CPIO=OFF
         -DENABLE_CAT=OFF
+        -DENABLE_UNZIP=OFF
         -DENABLE_XATTR=OFF
         -DENABLE_ACL=OFF
         -DENABLE_ICONV=OFF
