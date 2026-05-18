@@ -45,7 +45,7 @@ endif()
 # Check required python version
 vcpkg_find_acquire_program(PYTHON3)
 vcpkg_execute_in_download_mode(
-    COMMAND "${PYTHON3}" --version
+    COMMAND "${PYTHON3}" -c "import sys; print(sys.version)"
     OUTPUT_VARIABLE version_contents
     WORKING_DIRECTORY "${CURRENT_BUILDTREES_DIR}"
 )
